@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitive Types</title>
+    <style>
+        body {
+            background-color: oklab(35.739% 0.00664 0.00205 / 0.747);
+            color: white;
+            font: normal 15pt Arial;
+        }
+
+        h1 {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <hr>
+    <p>Já me livrei da maldição.</p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um número: ')) // verbose
+        var n2 = Number(window.prompt('Digite outro número: ')) // Number(n)
+        var n3 = Number.parseInt(window.prompt('Digite um terceiro número: ')) // verbose
+        var s = n1 + n2 + n3
+        alert('A soma dos valores é: ' + s.toString() + 'e me tornei string ao usar "n.toString()"')
+        alert(`A soma dos valores é ${s} usando template string`)
+        // number + number para adição
+        // string + string para concatenação
+        // String(n) / n.toString() converte * para string
+    </script>
+</body>
+</html>

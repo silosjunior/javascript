@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <style>
+            body {
+                font: normal 20pt Arial;
+            }
+    </style>
+</head>
+<body>
+    <h1>Formatando valores em moeda nacional</h1> <hr>
+    <p>Para formatar um valor em Real, por exemplo, que é a moeda nacional brasileira, utilize o seguinte comando:</p>
+    <code><em>[variable]</em>.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})</code> <hr>
+    <p>Caso queira apenas substituir um caractere ou acresecentar casas decimais use a seguinte sintaxe:</p><br>
+        <p>
+            <code>
+                let valor = 1.545
+                valor.toFixed(2).replace('.', ',') <br>
+                >>> '1545,50'
+            </code>
+        </p>
+        <br> <hr>
+    <script>
+        var nome = window.prompt('Digite seu nome: ')
+        document.write(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome em minúsuculas é ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>
